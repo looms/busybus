@@ -1,9 +1,10 @@
 body {
   background-color: #967777;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: SF Pro, sans-serif;
   color: rgba(220, 209, 209);
   line-height: 31px;
   font-size: 18px;
+  width: 375;
 }
 
 *, *:before, *:after {
@@ -11,17 +12,17 @@ body {
 }
 
 
+/*margin is measured as it is for best visual performance */
 nav {
   content: url("../images/statusbar.png");
+  margin: 0px auto;
+  padding: 0;
+  margin-top: -40px;
   position: fixed;
   width: 375px;
-  position: 0 auto ;
-  margin-top: -45px;
-  position: sticky;
 }
-
 ul{
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: SF Pro, sans-serif;
   font-weight: bold;
   margin-left: 5%;
   margin-top: 5%;
@@ -31,37 +32,40 @@ ul{
   padding-left: 50px;
 }
 
+
 .container {
     margin: 100px auto;
     width: 375px;
 }
 
-.locationbar{
+.content{
     display: inline-block;
-}
 
+
+}
 
 /*margin is measured as it is for best visual performance */
 
 
-.currentbus{
+
+.large{
   float: left;
-  color: rgba(220, 209, 209);
+  color: white;
   position: absolute;
-  padding: 0%;
   font-size: 50px;
-  margin-top: 25%;
+  margin-top: 24%;
   margin-left: -19%;
 }
 
-.arrivaltime{
+.largetime{
   float: left;
-  color: rgba(220, 209, 209);
+  color: white;
   position: absolute;
   font-size: 40px;
-  margin-top: 25%;
+  margin-top: 24%;
   margin-left: -7%;
 }
+
 
 .bus-line {
   background-color: #aaa;
@@ -89,14 +93,25 @@ ul{
   margin: 0 ;
 }
 
-.locationtop {
-  background-color: #474445;
-  border-bottom: 0px solid #000;
-  position: inherit;
-  font-family: SF Pro, calibri, sans-serif;
+.arrow{
+    text-align: left;
   float: left;
-  width: 100%;
 }
+.location {
+  background-color: #222;
+  border-bottom: 0px solid #000;
+  float: left;
+  padding: %;
+    padding: 5%;
+  float: left;
+  margin: 0%;
+  padding: 2%;
+  width: 100%;
+  text-align: left;
+}
+
+
+
 
 .avatar-good {
   float: left;
@@ -143,20 +158,13 @@ ul{
   font-size: 17px
 }
 
+
+
+
 .comment {
   font-size: 20px;
   text-align: left;
   margin-top: -35px;
   margin-left: 290px;
   overflow: hidden;
-}
-
-.arrow{
-  padding-left: 10px;
-}
-.place{
-  margin-left: 75px;
-    margin-top: 75px;
-  font-size: 18px;
-
 }
